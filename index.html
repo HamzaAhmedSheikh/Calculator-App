@@ -9,7 +9,7 @@
 <body>
    <div class="main">
     <div>
-      <input type="text" class="result">  
+      <input type="text" id="result" class="result">  
     </div>
 
      <div>
@@ -18,30 +18,30 @@
 
 
      <div>
-      <button class="btn"> 7</button>
-      <button class="btn">8</button>
-      <button class="btn">9</button>
-      <button class="btn">X</button>  
+      <button class="btn" onclick="getNumber('7')"> 7</button>
+      <button class="btn" onclick="getNumber('8')">8</button>
+      <button class="btn" onclick="getNumber('9')">9</button>
+      <button class="btn" onclick="getNumber('*')">X</button>  
      </div>
 
      <div>
-      <button class="btn">4</button>
-      <button class="btn">5</button>
-      <button class="btn">6</button>
-      <button class="btn">-</button>  
+      <button class="btn" onclick="getNumber('4')">4</button>
+      <button class="btn" onclick="getNumber('5')">5</button>
+      <button class="btn" onclick="getNumber('6')">6</button>
+      <button class="btn" onclick="getNumber('-')">-</button>  
      </div>
 
      <div>
-      <button class="btn">1</button>
-      <button class="btn">2</button>
-      <button class="btn">3</button>
-      <button class="btn">+</button>  
+      <button class="btn" onclick="getNumber('1')">1</button>
+      <button class="btn" onclick="getNumber('2')">2</button>
+      <button class="btn" onclick="getNumber('3')">3</button>
+      <button class="btn" onclick="getNumber('+')">+</button>  
      </div>
        
      <div>
-       <button class="halfBtn"> 0 </button>
-       <button class="halfBtn"> = </button>  
-       <button class="btn"> / </button>
+       <button class="halfBtn" onclick="getNumber('0')"> 0 </button>
+       <button class="halfBtn" onclick="getNumber('=')"> = </button>  
+       <button class="btn" onclick="getNumber('/')"> / </button>
      </div>
 
 
