@@ -1,23 +1,23 @@
 console.log("Calculator App by Hamza");
 
 
-function getNumber(num) {
-  var result = document.getElementById("result");  
+// function getNumber(num) {
+//   var result = document.getElementById("result");  
 
-   result.value += num
+//    result.value += num
     
-}
+// }
 
-function clearResult() {
-   var result = document.getElementById("result");      
+// function clearResult() {
+//    var result = document.getElementById("result");      
 
-   result.value = ''
-}
+//    result.value = ''
+// }
 
-function getResult() {
-    var result = document.getElementById("result"); 
+// function getResult() {
+//     var result = document.getElementById("result"); 
     
-     result.value = eval(result.value)
+//      result.value = eval(result.value)
     
  
- }
+//  }
