@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title> Calculator App By Hamza </title>
     <link rel="stylesheet" href="./style.css">    
 </head>
@@ -13,7 +14,7 @@
     </div>
 
      <div>
-       <button class="clearBtn"> C </button>  
+       <button class="clearBtn" onclick="clearResult()">  C </button>  
      </div>
 
 
@@ -40,7 +41,7 @@
        
      <div>
        <button class="halfBtn" onclick="getNumber('0')"> 0 </button>
-       <button class="halfBtn" onclick="getNumber('=')"> = </button>  
+       <button class="halfBtn" onclick="getResult()"> = </button>  
        <button class="btn" onclick="getNumber('/')"> / </button>
      </div>
 
