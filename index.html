@@ -15,29 +15,34 @@
   <div class="wrapper">
     <div class="calculator">
       <div class="calculator-header"></div>
-      <div class="calculator-body"></div>
+      <div class="calculator-body">
+        <div>
+          <h1 id="output"> 80 </h1>
+          <p id="input">20+20+40</p>
+        </div>
+      </div>
       <div class="calculator-footer">
 
-        <div class="symbol"><span> C </span></div>
-        <div class="symbol"><span> AC </span></div>
-        <div class="symbol"><span> % </span></div>
-        <div class="symbol"><span> / </span></div>
-        <div><span> 7 </span></div>
-        <div><span> 8 </span></div>
-        <div><span> 9 </span></div>
-        <div class="symbol"><span> x </span></div>
-        <div><span> 4 </span></div>
-        <div><span> 5 </span></div>
-        <div><span> 6 </span></div>
-        <div class="symbol"><span> - </span></div>
-        <div><span> 1 </span></div>
-        <div><span> 2 </span></div>
-        <div><span> 3 </span></div>
-        <div class="symbol"><span> + </span></div>
-        <div><span>0</span></div>
-        <div><span>.</span></div>
+        <div class="symbol" onclick="calculate('C')"><span> C </span></div>
+        <div class="symbol" onclick="calculate('AC')"><span> AC </span></div>
+        <div class="symbol" onclick="calculate('%')"><span> % </span></div>
+        <div class="symbol" onclick="calculate('/')"><span> / </span></div>
+        <div onclick="calculate('7')"><span> 7 </span></div>
+        <div onclick="calculate('8')"><span> 8 </span></div>
+        <div onclick="calculate('9')"><span> 9 </span></div>
+        <div class="symbol" onclick="calculate('x')"><span> x </span></div>
+        <div onclick="calculate('4')"><span> 4 </span></div>
+        <div onclick="calculate('5')"><span> 5 </span></div>
+        <div onclick="calculate('6')"><span> 6 </span></div>
+        <div class="symbol" onclick="calculate('-')"><span> - </span></div>
+        <div onclick="calculate('1')"><span> 1 </span></div>
+        <div onclick="calculate('2')"><span> 2 </span></div>
+        <div onclick="calculate('3')"><span> 3 </span></div>
+        <div class="symbol" onclick="calculate('+')"><span> + </span></div>
+        <div onclick="calculate('0')"><span>0</span></div>
+        <div onclick="calculate('.')"><span>.</span></div>
         <div><span> calc </span></div>
-        <div class="symbol-dark"><span>=</span></div>
+        <div class="symbol-dark" onclick="calculate('=')"><span>=</span></div>
        
 
 
