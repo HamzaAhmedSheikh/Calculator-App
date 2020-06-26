@@ -6,57 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title> Calculator App By Hamza </title>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">    
     
 </head>
 <body>
 
-  
 
+  <div class="main">
+    <form name="form">
+        <input type="text" name="textview" class="textview">
+    </form>
 
-  <div class="wrapper">    
-    <div class="calculator">      
-      <div class="calculator-header">               
-      </div>
-      <div class="calculator-body">
-        <div>
-          <h1 id="output"> 0 </h1>
-          <p id="input"></p>
-        </div>
-      </div>
-      <div class="calculator-footer">
-
-        <div class="symbol" onclick="calculate('C')"><span> C </span></div>
-        <div class="symbol" onclick="calculate('AC')"><span> AC </span></div>
-        <div class="symbol" onclick="calculate('%')"><span> % </span></div>
-        <div class="symbol" onclick="calculate('/')"><span> / </span></div>
-        <div onclick="calculate('7')"><span> 7 </span></div>
-        <div onclick="calculate('8')"><span> 8 </span></div>
-        <div onclick="calculate('9')"><span> 9 </span></div>
-        <div class="symbol" onclick="calculate('x')"><span> x </span></div>
-        <div onclick="calculate('4')"><span> 4 </span></div>
-        <div onclick="calculate('5')"><span> 5 </span></div>
-        <div onclick="calculate('6')"><span> 6 </span></div>
-        <div class="symbol" onclick="calculate('-')"><span> - </span></div>
-        <div onclick="calculate('1')"><span> 1 </span></div>
-        <div onclick="calculate('2')"><span> 2 </span></div>
-        <div onclick="calculate('3')"><span> 3 </span></div>
-        <div class="symbol" onclick="calculate('+')"><span> + </span></div>
-        <div onclick="calculate('0')"><span>0</span></div>
-        <div onclick="calculate('.')"><span>.</span></div>
-        <div><span> calc </span></div>
-        <div class="symbol-dark" onclick="calculate('=')"><span>=</span></div>
-       
-
-
-
-      </div>
+    <div class="clearfix">
+      <div class="col-3"> <input type="button" value="C" class="button top-button" /> </div>
+      <div class="col-3"> <input type="button" value="&#8756" class="button top-button">   </div>
+      <div class="col-3"> <input type="button" value="Del" class="button top-button">   </div>
+      <div class="col-3"> <input type="button" value="/" class="button operator">   </div>
     </div>
+
+    <div class="clearfix">
+      <div class="col-3"> <input type="button" value="7" class="button" onclick="getNumber(123)">   </div>
+      <div class="col-3"> <input type="button" value="8" class="button">   </div>
+      <div class="col-3"> <input type="button" value="9" class="button">   </div>
+      <div class="col-3"> <input type="button" value="x" class="button operator">   </div>
+    </div>
+
+    <div class="clearfix">
+      <div class="col-3"> <input type="button" value="4" class="button">   </div>
+      <div class="col-3"> <input type="button" value="5" class="button">   </div>
+      <div class="col-3"> <input type="button" value="6" class="button">   </div>
+      <div class="col-3"> <input type="button" value="-" class="button operator">   </div>
+    </div>
+
+    <div class="clearfix">
+      <div class="col-3"> <input type="button" value="1" class="button">   </div>
+      <div class="col-3"> <input type="button" value="2" class="button">   </div>
+      <div class="col-3"> <input type="button" value="3" class="button">   </div>
+      <div class="col-3"> <input type="button" value="+"  class="button operator">   </div>
+    </div>
+    <div class="clearfix">
+      <div class="col-3"> <input type="button" value="." class="button">   </div>
+      <div class="col-3"> <input type="button" value="0" class="button">   </div>
+      <div class="col-3"> <input type="button" value="=" class="button equal">   </div>
+    </div>
+
   </div>
 
-   
+
+
+  
     
-  <!-- <div class="main">
+
+  
+   
+ <!--   
+   <div class="main">
     <div>
       <input type="text" id="result" class="result">  
     </div>
@@ -70,7 +75,7 @@
       <button class="btn " onclick="getNumber('7')"> 7</button>
       <button class="btn" onclick="getNumber('8')">8</button>
       <button class="btn" onclick="getNumber('9')">9</button>
-      <button class="btn" onclick="getNumber('*')">X</button>  
+      <button class="btn" onclick="getNumber('*')">x</button>  
      </div>
 
      <div>
@@ -81,7 +86,7 @@
      </div>
 
      <div>
-      <button class="btn" onclick="getNumber('1')">1</button>
+      <button class="btn " onclick="getNumber('1')">1</button>
       <button class="btn" onclick="getNumber('2')">2</button>
       <button class="btn" onclick="getNumber('3')">3</button>
       <button class="btn" onclick="getNumber('+')">+</button>  
@@ -90,7 +95,7 @@
      <div>
        <button class="halfBtn" onclick="getNumber('0')"> 0 </button>
        <button class="halfBtn" onclick="getResult()"> = </button>  
-       <button class="btn" onclick="getNumber('/')"> / </button>
+       <button class="btn symbol" onclick="getNumber('%')"> % </button>
      </div>
 
 
