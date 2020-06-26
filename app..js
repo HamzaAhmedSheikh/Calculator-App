@@ -18,7 +18,7 @@ var output = document.getElementById("output")
         output.innerHTML = eval(input.innerHTML) === undefined ? 0: eval(input.innerHTML);
           break;
 
-      case '=': 
+      case "=": 
         output.innerHTML = eval(input.innerHTML)   
       default:
         input.innerHTML += data   
