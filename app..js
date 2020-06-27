@@ -1,5 +1,11 @@
 console.log("Calculator App by Hamza");
 
+function getNumber(num) {
+  var result = document.getElementById("result")
+
+    console.log(num);
+    
+}
 
 
 // // var input = document.getElementById("input")

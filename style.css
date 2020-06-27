@@ -1,5 +1,45 @@
 
+body {
+    background-color: #333333;    
+}
 
+.main {
+    /* border: 1px solid grey; */
+    width: 225px;
+    margin: 100px auto;  
+}
+
+.result {
+    width: 99%;
+    padding: 12px;
+    text-align: right;   
+    background-color: HoneyDew;
+    color: black;
+}
+
+.clearBtn {
+    display: inline-block;
+    position: relative;    
+    width: 48%;
+    border-radius: 10%;
+    outline: none;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #e6e6e6;
+    width: 51px;
+    margin: 0.3%;
+    margin-top: 10px;
+    padding-left: 10px;
+       
+}
+
+.halfBtn {
+    background-color: #e6e6e6;
+    width: 71px;
+    margin-top: 10px;
+}
 
 /* * {
     margin: 0;
