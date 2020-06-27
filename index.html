@@ -19,39 +19,39 @@
     </form>
 
     <div class="clearfix">
-      <div class="col-3"> <input type="button" value="C" class="button top-button" /> </div>
-      <div class="col-3"> <input type="button" value="&#8756" class="button top-button">   </div>
-      <div class="col-3"> <input type="button" value="Del" class="button top-button">   </div>
-      <div class="col-3"> <input type="button" value="/" class="button operator">   </div>
+      <div class="col-3"> <input type="button" value="C" class="button top-button" onclick="clearResult()"/> </div>
+      <div class="col-3"> <input type="button" value="&#8756" class="button top-button"> </div>
+      <div class="col-3"> <input type="button" value="Del" class="button top-button" onclick="back()"> </div>
+      <div class="col-3"> <input type="button" value="/" class="button operator" onclick="insert('/');" /> </div>
     </div>
 
     <div class="clearfix">
-      <div class="col-3"> <input type="button" value="7" class="button" onclick="getNumber(123)">   </div>
-      <div class="col-3"> <input type="button" value="8" class="button">   </div>
-      <div class="col-3"> <input type="button" value="9" class="button">   </div>
-      <div class="col-3"> <input type="button" value="x" class="button operator">   </div>
+      <div class="col-3"> <input type="button" value="7" class="button" onclick="insert(7);" /> </div>
+      <div class="col-3"> <input type="button" value="8" class="button" onclick="insert(8);" /> </div>
+      <div class="col-3"> <input type="button" value="9" class="button" onclick="insert(9)"> </div>
+      <div class="col-3"> <input type="button" value="x" class="button operator" onclick="insert('x')"> </div>
     </div>
 
     <div class="clearfix">
-      <div class="col-3"> <input type="button" value="4" class="button">   </div>
-      <div class="col-3"> <input type="button" value="5" class="button">   </div>
-      <div class="col-3"> <input type="button" value="6" class="button">   </div>
-      <div class="col-3"> <input type="button" value="-" class="button operator">   </div>
+      <div class="col-3"> <input type="button" value="4" class="button" onclick="insert(4);">   </div>
+      <div class="col-3"> <input type="button" value="5" class="button" onclick="insert(5);">   </div>
+      <div class="col-3"> <input type="button" value="6" class="button" onclick="insert(6);">   </div>
+      <div class="col-3"> <input type="button" value="-" class="button operator" onclick="insert('-')">   </div>
     </div>
 
     <div class="clearfix">
-      <div class="col-3"> <input type="button" value="1" class="button">   </div>
-      <div class="col-3"> <input type="button" value="2" class="button">   </div>
-      <div class="col-3"> <input type="button" value="3" class="button">   </div>
-      <div class="col-3"> <input type="button" value="+"  class="button operator">   </div>
+      <div class="col-3"> <input type="button" value="1" class="button" onclick="insert(1);">   </div>
+      <div class="col-3"> <input type="button" value="2" class="button" onclick="insert(2);">   </div>
+      <div class="col-3"> <input type="button" value="3" class="button" onclick="insert(3);">   </div>
+      <div class="col-3"> <input type="button" value="+"  class="button operator" onclick="insert('+')">   </div>
     </div>
     <div class="clearfix">
-      <div class="col-3"> <input type="button" value="." class="button">   </div>
-      <div class="col-3"> <input type="button" value="0" class="button">   </div>
-      <div class="col-3"> <input type="button" value="=" class="button equal">   </div>
+      <div class="col-3"> <input type="button" value="." class="button" onclick="insert('.')">   </div>
+      <div class="col-3"> <input type="button" value="0" class="button" onclick="insert(0)">   </div>
+      <div class="col-3"> <input type="button" value="=" class="button equal" onclick="equal()">   </div>
     </div>
 
-  </div>
+  </div> -->
 
 
 
@@ -60,8 +60,8 @@
 
   
    
- <!--   
-   <div class="main">
+   
+   <!-- <div class="main">
     <div>
       <input type="text" id="result" class="result">  
     </div>
@@ -99,7 +99,7 @@
      </div>
 
 
-   </div>    -->
+   </div>   
 
    
 
