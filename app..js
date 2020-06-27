@@ -2,11 +2,21 @@ console.log("Calculator App by Hamza");
 
 function getNumber(num) {
   var result = document.getElementById("result")
-
-    console.log(num);
-    
+  
+   result.value += num    
 }
 
+function clearResult() {
+  var result = document.getElementById("result") 
+
+   result.value = ""
+}
+
+function back() {
+  var result = document.getElementById("result") 
+
+  result.value = result.value.slice(0 , -1)
+}
 
 // // var input = document.getElementById("input")
 
